@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Zoho Puvi', sans-serif;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    background-color:#FFBD59;
+    ;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width:130;
+    height:104;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.nav-items a.active,
+.nav-items a:hover {
+    border-bottom: 2px solid #ffa500;
+}
+
+
+.header{
+    width: 200px;
+    height: 50px;
+    color:white;
+    background-color:black;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 50px; /* Center text vertically */
+    padding: 2px;
+    margin: 0 auto; /* Center the element horizontally */
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+.container {
+    display: flex; /* Use Flexbox to arrange items */
+  }
+  
+  .content {
+    text-align:justify;
+    flex: 1; /* Allow the paragraph to grow and shrink */
+    margin-right: 20px; /* Adjust spacing between paragraph and image */
+    padding: 30px;
+  }
+  
+  .image {
+    flex: 1;
+    display:flex
+  }
+  
+  /* Adjust image size if needed */
+  .image img {
+   max-width:80%; 
+   max-height: 70%;
+   width: auto;
+    height: auto; /* Maintain aspect ratio */
+  }
+  .side-container {
+    flex: 1;
+    /* display:flex; */
+    max-width:100%; 
+    height: auto;
+  }
+
+  
+
+
+.mission {
+    background: #f4f4f4;
+    padding: 2rem 5%;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.card {
+    background: #FFBD59 ;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    flex-basis: calc(33.333% - 2rem);
+    /* text-align: center; */
+    box-shadow: 5px 5px;
+}
+
+.card.team{
+    display: flex;
+}
+.symbol{
+    display:flex;
+    padding-right:20px;
+}
+.cardtext{
+    color:white;
+   text-align:left;
+    flex:1;
+   margin-right: 20px; /* Adjust spacing between paragraph and image */
+   padding: 20px;
+}
+
+.card.board {
+    display: flex;
+}
+
+.card.advertisement {
+    display: flex;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .info-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: auto;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
